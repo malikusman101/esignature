@@ -89,11 +89,11 @@ export default function App() {
         <Route path="/sign/:token" element={<SigningPage />} />
 
         {/* Protected */}
-        <Route path="/dashboard" element={<PublicOnlyRoute><DashboardPage /></PublicOnlyRoute>} />
-        <Route path="/documents" element={<PublicOnlyRoute><DocumentsPage /></PublicOnlyRoute>} />
-        <Route path="/documents/new" element={<PublicOnlyRoute><UploadDocumentPage /></PublicOnlyRoute>} />
-        <Route path="/documents/:id" element={<PublicOnlyRoute><DocumentDetailPage /></PublicOnlyRoute>} />
-        <Route path="/profile" element={<PublicOnlyRoute><ProfilePage /></PublicOnlyRoute>} />
+        <Route path="/dashboard" element={<ProtectedRoute><DashboardPage /></ProtectedRoute>} />
+        <Route path="/documents" element={<ProtectedRoute><DocumentsPage /></ProtectedRoute>} />
+        <Route path="/documents/new" element={<ProtectedRoute><UploadDocumentPage /></ProtectedRoute>} />
+        <Route path="/documents/:id" element={<ProtectedRoute><DocumentDetailPage /></ProtectedRoute>} />
+        <Route path="/profile" element={<ProtectedRoute><ProfilePage /></ProtectedRoute>} />
 
         {/* 404 fallback */}
         <Route path="*" element={
