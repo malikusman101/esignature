@@ -12,8 +12,8 @@
 
 const { verifySignerToken } = require('../utils/jwt');
 const { User, Document, Signer, SignatureField, AuditLog } = require('../models');
-const { embedSignedFields, generateAuditTrail } = require('../services/pdfService');
-const { sendEmail } = require('../services/emailService');
+const { embedSignedFields, generateAuditTrail } = require('../services/pdf');
+const { sendEmail } = require('../services/email');
 const { asyncHandler, ApiError } = require('../middleware/errorHandler');
 
 // Helper to log audit

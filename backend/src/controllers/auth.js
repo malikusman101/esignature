@@ -19,7 +19,7 @@ const {
   verifyRefreshToken,
   generateRandomToken,
 } = require('../utils/jwt');
-const { sendEmail } = require('../services/emailService');
+const { sendEmail } = require('../services/email');
 const { asyncHandler, ApiError } = require('../middleware/errorHandler');
 
 // ── REGISTER ──────────────────────────────────────────────────────────────────
