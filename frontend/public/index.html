@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1a1a2e" />
+    <meta name="description" content="eSign - Complete E-Signature Platform. Sign documents legally and securely." />
+    <meta name="keywords" content="esign, electronic signature, digital signature, docusign alternative, sign documents online" />
+    <meta property="og:title" content="eSign Platform" />
+    <meta property="og:description" content="Sign documents legally and securely online." />
+    <meta property="og:type" content="website" />
+
+    <!-- Preconnect to Google Fonts for faster load -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Dancing+Script:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>eSign — Electronic Signature Platform</title>
+
+    <style>
+      /* Prevent flash of unstyled content */
+      body { margin: 0; background: #f6f7fb; }
+
+      /* Full-page loading spinner shown before React mounts */
+      #root:empty::after {
+        content: '';
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f6f7fb;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <div style="display:flex;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;text-align:center;padding:24px;">
+        <div>
+          <h2>JavaScript Required</h2>
+          <p>Please enable JavaScript in your browser to use eSign Platform.</p>
+        </div>
+      </div>
+    </noscript>
+    <div id="root"></div>
+  </body>
+</html>

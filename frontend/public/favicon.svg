@@ -1,0 +1,16 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="14" fill="#2563EB"/>
+  
+  <!-- Document -->
+  <path d="M20 14H36L46 24V50H20V14Z" fill="white"/>
+  <path d="M36 14V24H46" fill="#DBEAFE"/>
+  
+  <!-- Signature line -->
+  <path d="M24 40C28 34 34 46 40 38C42 36 44 38 44 40" 
+        stroke="#2563EB" 
+        stroke-width="3" 
+        stroke-linecap="round"/>
+        
+  <!-- Pen -->
+  <path d="M40 44L46 38L48 40L42 46H40V44Z" fill="#1D4ED8"/>
+</svg>
